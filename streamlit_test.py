@@ -22,10 +22,14 @@
 import streamlit as st
 # import os
 from PIL import Image
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+IMAGE_PATH = BASE_DIR / "data" / "Aerophoto.jpg"
 
 st.header("🖼️ 土石流圖片")
 
-st.image("data\Aerophoto.jpg", use_container_width=True)
+st.image(IMAGE_PATH, use_container_width=True)
 
 # 初始化 session_state（用來記錄上傳介面是否開啟）
 if "show_uploader" not in st.session_state:

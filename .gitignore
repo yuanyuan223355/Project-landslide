@@ -1,0 +1,5 @@
+# 忽略
+.streamlit/secrets.toml
+#忽略 Python 執行產生的快取資料夾
+__pycache__/
+*.pyc
